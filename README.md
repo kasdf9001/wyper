@@ -11,6 +11,8 @@ ever arises.
 
 # Database structure
 
+Database dump can be found at assets/Database/wyper-database.sql   
+
 <pre>
    LOCATION             IMAGE
    +-------------+     +------------+  
