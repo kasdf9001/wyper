@@ -12,6 +12,7 @@ ever arises.
 # Database structure
 
 <pre>
+   LOCATION             IMAGE
    +-------------+     +------------+  
    |locationID   +--+  |imageID     |  
    |locationName |  |  |small       |  
@@ -20,10 +21,12 @@ ever arises.
    |description  |  +--+locationFK  |  
    +-------------+  |  +------------+  
                     |  
+                    |   COMMENT
                     |  +------------+  
                     |  |commentID   |  
                     |  |commentText |  
-                    +--+commentFK   |  
+                    +--+commentFK   |
+                       |points      |
                        +------------+
 </pre>       
                       
@@ -33,7 +36,11 @@ Yii 2.0.x
 PHP 5.4 or better
 MySQL / MariaDB
 Composer
+Some kind of web server
 
 Why this? This is something I know how to use at this moment.
 
 # Installation
+
+php composer.phar create-project yiisoft/yii2-app-basic basic 2.0.8
+git clone this on top of that
