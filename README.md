@@ -11,20 +11,22 @@ ever arises.
 
 # Database structure
 
-   +-------------+     +------------+
-   |locationID   +--+  |imageID     |
-   |locationName |  |  |small       |
-   |coord_lat    |  |  |original    |
-   |coord_long   |  |  |description |
-   |description  |  +--+locationFK  |
-   +-------------+  |  +------------+
-                    |
-                    |  +------------+
-                    |  |commentID   |
-                    |  |commentText |
-                    +--+commentFK   |
+<pre>
+   +-------------+     +------------+  
+   |locationID   +--+  |imageID     |  
+   |locationName |  |  |small       |  
+   |coord_lat    |  |  |original    |  
+   |coord_long   |  |  |description |  
+   |description  |  +--+locationFK  |  
+   +-------------+  |  +------------+  
+                    |  
+                    |  +------------+  
+                    |  |commentID   |  
+                    |  |commentText |  
+                    +--+commentFK   |  
                        +------------+
-                       
+</pre>       
+                      
 # Requirements
 
 Yii 2.0.x
