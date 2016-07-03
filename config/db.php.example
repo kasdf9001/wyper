@@ -1,0 +1,10 @@
+<?php
+
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost;dbname=wyper',
+    // I know this is a password stored publicly in git. There are things that prevent the abuse of this password.
+    'username' => 'wyper',
+    'password' => '275e9AR6aQNVZTj4',
+    'charset' => 'utf8',
+];
